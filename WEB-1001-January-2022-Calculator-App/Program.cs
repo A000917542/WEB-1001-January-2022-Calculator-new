@@ -1,4 +1,5 @@
 ﻿using System;
+using WEB_1001_January_2022_Calculator_Library;
 
 namespace WEB_1001_January_2022_Calculator_App
 {
@@ -32,26 +33,7 @@ namespace WEB_1001_January_2022_Calculator_App
 
                         if (int.TryParse(args[0], out lValue) && int.TryParse(args[1], out rValue))
                         {
-                            double answer = 0;
-
-                            switch (symbol)
-                            {
-                                case "+":
-                                    answer = lValue + rValue;
-                                    break;
-                                case "-":
-                                    answer = lValue - rValue;
-                                    break;
-                                case "/":
-                                    answer = lValue / rValue;
-                                    break;
-                                case "*":
-                                    answer = lValue * rValue;
-                                    break;
-                                default:
-                                    Console.WriteLine(INVALID_EQUATION_ERROR);
-                                    break;
-                            }
+                            double answer = Calculator.Calculate(lValue, rValue, symbol);
 
                             Console.WriteLine($"The answer to {equation} is {answer}.");
                         }
