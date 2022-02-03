@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>WEB_1001_January_2022_Calculator_App</RootNamespace>
+  </PropertyGroup>
+
+</Project>
